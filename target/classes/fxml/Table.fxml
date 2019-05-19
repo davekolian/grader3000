@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.axiostheos.grader3000.TableController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1000.0" layoutX="1.0" layoutY="-14.0">
+         <image>
+            <Image url="@../images/Compzzz.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DIFFERENCE" fitHeight="86.0" fitWidth="349.0" layoutX="326.0" layoutY="96.0">
+         <image>
+            <Image url="@../images/g3k.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="vbox1" alignment="CENTER_LEFT" layoutX="128.0" layoutY="203.0" prefHeight="446.0" prefWidth="184.0" style="-fx-opacity: 1;" />
+      <VBox fx:id="vbox5" alignment="TOP_CENTER" layoutX="830.0" layoutY="227.0" prefHeight="446.0" prefWidth="38.0" />
+      <VBox fx:id="vbox4" alignment="CENTER" layoutX="342.0" layoutY="203.0" prefHeight="446.0" prefWidth="100.0" />
+      <VBox fx:id="vbox6" layoutX="654.0" layoutY="227.0" prefHeight="446.0" prefWidth="153.0" />
+      <VBox fx:id="vbox3" alignment="CENTER" layoutX="583.0" layoutY="203.0" prefHeight="446.0" prefWidth="38.0" />
+      <VBox fx:id="vbox2" layoutX="457.0" layoutY="226.0" prefHeight="446.0" prefWidth="100.0" />
+      <Text layoutX="128.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME:" wrappingWidth="55.13671875">
+         <font>
+            <Font name="Windows Command Prompt Regular" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="583.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#SEMS" wrappingWidth="92.13671875">
+         <font>
+            <Font name="Windows Command Prompt Regular" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="457.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NATIONALITY" wrappingWidth="100.0">
+         <font>
+            <Font name="Windows Command Prompt Regular" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="338.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEPTUN CODE" wrappingWidth="107.0">
+         <font>
+            <Font name="Windows Command Prompt Regular" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="677.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAJOR" textAlignment="CENTER" wrappingWidth="107.0">
+         <font>
+            <Font name="Windows Command Prompt Regular" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="796.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADE" textAlignment="CENTER" wrappingWidth="107.0">
+         <font>
+            <Font name="Windows Command Prompt Regular" size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="searchBtn" layoutX="689.0" layoutY="703.0" mnemonicParsing="false" onAction="#isSearch" prefHeight="27.0" prefWidth="151.0" text="GO BACK TO SEARCH?">
+         <font>
+            <Font name="Windows Command Prompt Regular" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.axiostheos.grader3000.StudentPageController">
+   <children>
+      <ImageView fitHeight="1000.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../images/Compzz.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DIFFERENCE" fitHeight="86.0" fitWidth="349.0" layoutX="326.0" layoutY="226.0">
+         <image>
+            <Image url="@../images/g3k.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="1.0" layoutY="-1.0" prefHeight="1000.0" prefWidth="1000.0">
+         <children>
+            <ImageView fitHeight="186.0" fitWidth="172.0" layoutX="655.0" layoutY="370.0">
+               <image>
+                  <Image url="@../images/pic.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="172.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEPTUN CODE:" wrappingWidth="172.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="28.0" />
+               </font>
+            </Text>
+            <Text layoutX="172.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADE:" wrappingWidth="88.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="28.0" />
+               </font>
+            </Text>
+            <Text layoutX="172.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE:" wrappingWidth="172.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="28.0" />
+               </font>
+            </Text>
+            <Text layoutX="172.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CURRENT SEMESTER:" wrappingWidth="259.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="28.0" />
+               </font>
+            </Text>
+            <Text fx:id="tname" fill="#4078c6" layoutX="124.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="496.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="40.0" />
+               </font>
+            </Text>
+            <Text fx:id="tnep" fill="#4078c6" layoutX="344.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="tcour" fill="#4078c6" layoutX="270.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="399.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="tsem" fill="#4078c6" layoutX="400.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="236.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="tgrade" fill="#4078c6" layoutX="264.0" layoutY="588.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="51.73675537109375">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="25.0" />
+               </font>
+            </Text>
+            <Button blendMode="DIFFERENCE" layoutX="335.0" layoutY="569.0" mnemonicParsing="false" prefHeight="12.0" prefWidth="114.0" text="CHANGE GRADE" textFill="#0a39bc">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="16.0" />
+               </font>
+            </Button>
+            <Line endX="204.60003662109375" layoutX="212.0" layoutY="385.0" startX="-100.0" />
+            <Button fx:id="searchBtn" layoutX="527.0" layoutY="648.0" mnemonicParsing="false" onAction="#isSearch" prefHeight="27.0" prefWidth="151.0" text="BACK TO SEARCH?">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="listBtn" layoutX="694.0" layoutY="648.0" mnemonicParsing="false" onAction="#isList" prefHeight="27.0" prefWidth="151.0" text="LIST OF STUDENTS!">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

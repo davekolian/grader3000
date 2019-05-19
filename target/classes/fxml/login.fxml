@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="bg" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.axiostheos.grader3000.LoginController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="800.0">
+         <image>
+            <Image url="@../images/Comp.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="7.0" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <ImageView blendMode="DIFFERENCE" fitHeight="57.0" fitWidth="200.0" layoutX="308.0" layoutY="235.0">
+               <image>
+                  <Image url="@../images/g3k.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="291.0" layoutY="335.0" onKeyPressed="#getUsername" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME:" wrappingWidth="77.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="291.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD:" wrappingWidth="77.13671875">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="user" alignment="CENTER" blendMode="SRC_ATOP" layoutX="400.0" layoutY="318.0" onKeyPressed="#getUsernameEnter" prefHeight="15.0" prefWidth="140.0" promptText="**YOUR FULL NAME**">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pass" alignment="TOP_CENTER" layoutX="400.0" layoutY="365.0" onAction="#getPassword" onKeyPressed="#getPasswordEnter" prefHeight="25.0" prefWidth="140.0" promptText="**YOUR PASSWORD**">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="15.0" />
+               </font>
+            </PasswordField>
+            <Text fill="#3572eb" layoutX="470.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: true;" text="NO ACCOUNT? SIGN UP!" textAlignment="CENTER" wrappingWidth="156.33673095703125">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="16.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Text>
+            <Button fx:id="login" layoutX="369.0" layoutY="406.0" mnemonicParsing="false" onAction="#getBoth" prefHeight="0.0" prefWidth="77.0" text="SEARCH!">
+               <font>
+                  <Font name="Windows Command Prompt Regular" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
